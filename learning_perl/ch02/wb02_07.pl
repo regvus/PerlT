@@ -8,6 +8,7 @@ my $sum;
 print "Enter a number: ";
 
 while (my $number = <STDIN>) {
+    chomp $number;
     $sum += $number if looks_like_number $number;
     print "Enter a number: ";
 }
